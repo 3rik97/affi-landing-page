@@ -1,0 +1,17 @@
+body {
+    background-color:#101010;
+}
+
+.navBox{
+    display: block;;
+    width: 100%;
+    height: 60px;
+    padding-left: 5%;
+    padding-right:5%;
+    
+}
+.navigationBar{
+    background-color:#000000;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
