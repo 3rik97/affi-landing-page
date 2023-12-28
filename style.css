@@ -2,9 +2,10 @@
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito&display=swap');
 body {
     background-color:#f6f0f0;
+    margin: 0;
 }
 
-.navBox{
+ .navBox{
     display: block;
     position:fixed;
     padding-left: 4%;
@@ -12,11 +13,25 @@ body {
     z-index: 2;
     
 }
+.navbar{
+    display: block;
+    padding: 0 4% 0 4%;
+    margin: auto;
+    width: 100%;
+    position: fixed;
+    
+}
 .navigationBar{
     background-color:#212121;
     padding: 32px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    
+  
+   
    
 }
 .navigationLinks{
@@ -95,9 +110,8 @@ li a{
     display: block;
     margin-left: 200px;
 }
-
 .banner-text{
-    padding:200px 80px 80px 100px
+    padding: 200px 100px;
 }
 .banner-text>h1{
     color: black;
@@ -114,27 +128,12 @@ li a{
     line-height: 20px;
     
 }
-.bannerImg{
-    position: relative;
-    
-}
-.img1{
-    position: absolute;
-    bottom:5%;
-    left: -10%;
-}
-.img2{
-    position: absolute;
-    right: 0;
-    top: 20%;
-    
-    
-}
-.content-container{
+
+.contentContainer{
     background-color: #E83344;
-    padding: 10px 70px 10px 70px;
+    
 }
-.content-container>div>h1{
+.contentContainer>div>h1{
     color: white;
     font-family: 'nunito','sans-serif';
     width: 750px;
@@ -143,7 +142,7 @@ li a{
     margin: auto;
     
 }
-.content-container>div>p{
+.contentP{
     color: white;
     font-family: 'nunito','sans-serif';
     font-size: 22px;
@@ -152,34 +151,48 @@ li a{
     display: block;
     margin: auto;
 }
+
 .img3{
     display: block;
     margin: auto;
-    height: 250px;
-    width: 500px;
+    height: auto;
+    width:100%;
     background-color: #212121;
 }
-@media screen and(max-width: 991px) {
+
+
+@media screen and (max-width: 1061px){
+    .langBox,.btnBox{
+        display: none;
+    }
+  
+    ul li{
+        display:none;
+    }
+    .logoBox{
+        margin-left: 0;
+    }
     .banner{
-        margin: 0 !important;
+        padding:0px 0px 0px 0px;
+        
     }
     .banner-text{
-        padding:0 !important;
+        padding: 100px 0 0 0;
     }
-    .bannerImg{
+    .contentP{
+        width: 100%;
+    }
+    .btnJoin{
+        background-color: #E83344;
+        color: white;
+        border-radius: 50px;
+        min-width: 100px;
+        border: none;
+        padding: 5px 45px 5px 45px;
+        font-size: 26px;
+        font-weight: 600;
         display: block;
+        margin: auto;
     }
-    .img1{
-        position:unset !important;
-        height: 380px !important;
-        width: 280px !important;
-        margin: 0 !important;
-    }
-    .img2{
-        position:unset !important;
-        height: 280px;
-        width: 780px;
-        margin: 0 !important;
-    }
+    
 }
-
