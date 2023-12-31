@@ -1,53 +1,34 @@
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito&display=swap');
-body {
-    background-color:#f6f0f0;
-    margin: 0;
-}
 
- .navBox{
-    display: block;
-    position:fixed;
-    padding-left: 4%;
-    padding-right:4%;
-    z-index: 2;
-    
-}
-.navbar{
-    display: block;
-    padding: 0 4% 0 4%;
-    margin: auto;
-    width: 100%;
-    position: fixed;
-    
-}
+ html, body{
+    overflow-x: hidden;
+ }
 .navigationBar{
-    background-color:#212121;
-    padding: 32px;
+    background-color: #212121;
+    padding:36px;
+    width: 90%;
+    display: flex;
+    flex-flow: row;
+    flex:wrap;
+    align-items: center;
+    justify-content: center;
+    gap:80px;
+    position: fixed;    
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    width: 100%;
-    display: flex;
-    position: fixed;
-    
-  
-   
-   
 }
-.navigationLinks{
-    width:fit-content;
-    display: block;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: auto;
-}
+
 ul{
     display: block;
     margin: auto;
     padding: 0px;
 }
 ul li{
-    display: inline-block;
+    display: inline-flex;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -58,23 +39,15 @@ li a{
     font-size: 18px;
     letter-spacing: .88;
 }
-.logoBox{
-    display: block;
-    margin: auto;
-    width: fit-content;
 
-}
 .logo{
     display: block;
-    height: 44px;
+    height: 30px;
+    margin: auto;
     
 }
-.btnBox{
-    display: block;
-    margin: auto;
-    padding: 0;
-    width:fit-content;
-   
+.btnBox2{
+    display: none;
 }
 .btnSignup,.btnLogin{
     display: inline-block;
@@ -88,10 +61,7 @@ li a{
     background-color: #E83344;
     color: white;
 }
-.langBox{
-    display: inline-block;
-    padding: 10px;   
-}
+
 .btnLang,.btnLang >img{
     text-decoration: none;
     color: white;
@@ -109,28 +79,39 @@ li a{
     font-weight: 600;
     display: block;
     margin-left: 200px;
+    box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.20) inset, 0px 7px 13px -3px rgba(0, 0, 0, 0.30), 0px 2px 4px 0px rgba(0, 0, 0, 0.40);
 }
-.banner-text{
-    padding: 200px 100px;
+.banner{
+    padding-top: 220px;
+    padding-left:100px;
+    padding-bottom:180px;
 }
-.banner-text>h1{
-    color: black;
-    font-family: 'Righteous', 'sans-serif';
-    font-size: 66px;
+.bannertext>h1{
+    color: #212121;
+    font-family: Righteous;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110.511%; /* 70.727px */
+    letter-spacing: -0.88px;
 }
-.banner-text>h1>span{
+.bannertext>h1>span{
     color: #E83344;
 }
-.banner-text>p{
+.bannertext>p{
     margin: 25px 0 25px 0;
-    font-weight: 450;
-    font-size: 22px;
-    line-height: 20px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.88px;
+    max-width: 700px;
     
 }
 
 .contentContainer{
     background-color: #E83344;
+    padding: 10px 20px 20px 10px;
     
 }
 .contentContainer>div>h1{
@@ -143,45 +124,70 @@ li a{
     
 }
 .contentP{
-    color: white;
-    font-family: 'nunito','sans-serif';
-    font-size: 22px;
-    width: 750px;
-    padding: 0 20px 0 20px;
-    display: block;
-    margin: auto;
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 39px; /* 162.5% */
+    letter-spacing: -1.04px;
+    padding: 80px;
+    padding-top: 5px;
 }
-
+.bannerImgContainer{
+    padding-bottom: 50px;
+}
+.img1{
+    max-height: 450px;
+    max-width: 450px;
+    padding-right:20px;
+}
+.img2{
+    height: 250px;
+    width: 250px;
+        margin-top:-180px
+}
 .img3{
     display: block;
-    margin: auto;
-    height: auto;
-    width:100%;
+    height: 300px;
+    width: 100%;
     background-color: #212121;
+    
 }
+
+
 
 
 @media screen and (max-width: 1061px){
+    .navigationBar{
+        background-color: #212121;
+        padding:10px;
+        width: 100%;
+        position: fixed;   
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        display: block;
+
+    }
+    .logoBox{
+        float: left;
+    }
     .langBox,.btnBox{
         display: none;
     }
-  
+    .btnBox2{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left:0;
+        background-color: #212121;
+        width: 100%;
+        padding: 20px;
+    }
     ul li{
         display:none;
     }
-    .logoBox{
-        margin-left: 0;
-    }
-    .banner{
-        padding:0px 0px 0px 0px;
-        
-    }
-    .banner-text{
-        padding: 100px 0 0 0;
-    }
-    .contentP{
-        width: 100%;
-    }
+   
     .btnJoin{
         background-color: #E83344;
         color: white;
@@ -193,6 +199,38 @@ li a{
         font-weight: 600;
         display: block;
         margin: auto;
+    }
+    .banner{
+        padding-top: 80px;
+        padding-left:10px;
+        padding-bottom: 0;
+    }
+    .bannerImgContainer{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        padding-bottom: 50px;
+
+    }
+    .img1{
+        height: 200px !important;
+        width: 200px !important;
+        margin: auto;
+        margin-left: -70px;
+        padding: 0;
+    }
+    .img2{
+        height: 120px;
+        width: 120px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .contentContainer>div>h1{
+        display: flex;
+    }
+    .contentP{
+        padding: 0;
     }
     
 }
