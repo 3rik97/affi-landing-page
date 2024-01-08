@@ -564,6 +564,9 @@ footer{
     padding-left: 140px;
 }
 @media screen and (max-width: 1061px){
+    h1{
+        font-size: 40px !important;
+    }
     .navigationBar{
         background-color: #212121;
         padding:10px;
@@ -660,6 +663,94 @@ footer{
     }
     .contentP{
         padding: 0;
+    }
+    .affiCardsContainer{
+        display: block;
+        margin: auto;
+        align-items: center;
+        align-content: center;
+        padding-bottom: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .card1,.card2{
+        display: block;
+        width: 100% !important;
+        height: 600px;
+        background-color:#EDE5E5;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 50px;
+        position: relative;
+        border-radius:50px;
+        &::after{
+            content: "";
+            width: 103% !important;
+            height: 102% !important;
+            position: absolute;
+            background-color: #EE3945;
+            border-radius:50px;
+            top: -2px;
+            left: -2px;
+            z-index: -1;
+        }
+    }
+    
+    
+    .card1>img,.card2>img{
+        height: 80px;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        top: -30px;
+    }
+    .card2{
+        margin-top: 40px;
+    }
+    .h1Afiliates{
+        padding-top: 80px;
+        padding-left: 35px;
+        font-family: 'nunito',sans-serif;
+        font-weight:600;
+        position: relative;
+        width: fit-content;
+    
+        &::before{
+            content: "";
+            position: absolute;
+            height: 41%;
+            width: 8px;
+            margin-top: -4px;
+            margin-left: -15px;
+            background: #E83344;
+    
+        }
+    }
+    .cardp{
+        color: #363636;
+        font-family: 'poppins',sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34.5px;
+        width: auto !important;
+        padding-top: 20px;
+        padding-left:5px;
+        padding-right: 5px;
+        
+    }
+    .cardLink{
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: #EE3945;
+        font-family: 'Nunito',sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px; /* 180% */
+        letter-spacing: -1.16px;
+        margin-top: 45px;
     }
     
 }
