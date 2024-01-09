@@ -180,7 +180,7 @@ li a{
     
 }
 .affiCardsContainer{
-    margin: auto;
+    display: flex;
     align-items: center;
     align-content: center;
     padding-top: 0;
@@ -190,7 +190,7 @@ li a{
 }
 .card1,.card2{
     display: block;
-    width: 720px;
+    max-width: 720px;
     height: 500px;
     background-color:#EDE5E5;
     margin: auto;
@@ -198,13 +198,14 @@ li a{
     border-radius:50px;
     &::after{
         content: "";
-        width: 733px;
-        height: 524px;
+        max-width: 733px;
+        height: 510px;
         position: absolute;
         background-color: #EE3945;
         border-radius:50px;
-        top: -2px;
-        left: -2px;
+        top: 0;
+        left: 0;
+        right: -15px;
         z-index: -1;
     }
 }
@@ -267,7 +268,7 @@ li a{
     background: linear-gradient(180deg, #000 17.64%, #161515 42.44%, #EE3945 94.51%);
     padding: 80px 120px 0 120px;
     position: relative;
-    z-index: -1;
+    
 }
 .rocket{
     position: absolute;
@@ -279,8 +280,8 @@ li a{
     display: block;
     margin: auto;
     padding: 0;
-    height: 650px;
-    width: auto;
+    height: auto;
+    width: 100%;
     margin-top: -80px;
 }
 .revh1{
@@ -316,6 +317,8 @@ li a{
     margin-top: -40px;
     padding-left: 25%;
     height: 750px;
+    display: block;
+    position: relative;
 
 }
 
@@ -381,8 +384,8 @@ li a{
     
 }
 .imgtempo{
-    width: 594px;
-    height: 341px;
+    width: 100%;
+    height: auto;
     display: block;
     margin: auto;
     
@@ -563,9 +566,10 @@ footer{
 .icons{
     padding-left: 140px;
 }
-@media screen and (max-width: 1061px){
+@media screen and (max-width: 1063px){
     h1{
         font-size: 40px !important;
+        width: 100% !important;
     }
     .navigationBar{
         background-color: #212121;
@@ -575,6 +579,11 @@ footer{
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         display: block;
+        z-index: 10;
+    }
+    .mobileUI{
+        z-index: 10 !important;
+        position: relative;
     }
     .logoBox{
         float: left;
@@ -590,19 +599,27 @@ footer{
         background-color: #212121;
         width: 100%;
         padding: 20px;
+        
     }
     .navMobile{
         display: block;
         background-color: #212121;
         position: fixed;
         height: auto;
-        right: 0;
+        width: 100%;
         margin-top: 50px;
-        z-index: 2;
+        z-index: 11 !important;
+        transform: translateY(-200px);
         
     }
     .navMobile>ul li{
         display: block;
+        margin: auto;
+        
+    }
+    .link>a{
+        display: block;
+        text-align: center;
     }
     .burgerMenu{
         display: block;
@@ -666,7 +683,7 @@ footer{
     }
     .affiCardsContainer{
         display: block;
-        margin: auto;
+       
         align-items: center;
         align-content: center;
         padding-bottom: 0 !important;
@@ -705,7 +722,8 @@ footer{
         top: -30px;
     }
     .card2{
-        margin-top: 40px;
+        margin-top: 50px;
+        margin-bottom: 60px;
     }
     .h1Afiliates{
         padding-top: 80px;
@@ -752,5 +770,267 @@ footer{
         letter-spacing: -1.16px;
         margin-top: 45px;
     }
+    .revenueContent{
+        background: linear-gradient(180deg, #000 17.64%, #161515 42.44%, #EE3945 94.51%);
+        padding: 0;
+        position: relative;
+        z-index: 0;
+    }
+    .rocket{
+        position: absolute;
+        top: -140px;
+        height: 300px;
+        width: auto;
+    }
+    .revImg{
+        display: block;
+        margin: auto;
+        padding: 0;
+        height: auto;
+        width: 100%;
+        
+    }
+    .revh1{
+        margin-top: 120px;
+        color: #FFF;
+        text-align: left;
+        font-family: 'Nunito',sans-serif;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 42px; /* 65.625% */
+        letter-spacing: -3.32px;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            height: 140%;
+            width: 8px;
+            margin-top: -10px;
+            background: #E83344;
+    
+        }
+    }
+    .revp{
+        color: #FFF;
+        font-family: Nunito;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 42px; /* 175% */
+        margin-top: 60px;
+    }
+
+    .revenueContent2{
+        padding: 0;
+    }
+    .rabbit{
+        position:initial;
+        display: block;
+        margin: auto;
+        padding: 0;
+        height: 400px !important;
+        
+    }
+    .parceiro{
+       width: 100%;
+       height: 100%;
+       margin: auto;
+       &::after{
+        width: 102%;
+        height: 102%;
+       }
+    }
+ 
+    .revContent3{
+        padding-top: 60px;
+        padding-left:80px;
+        padding-right:80px;
+        background: linear-gradient(180deg, #000 17.64%, #161515 42.44%, #EE3945 94.51%);
+    }
+    .rowContent{
+        padding-bottom: 80px;
+    }
+    .revContent3{
+        padding: 15px;
+    }
+    .imgtempo{
+        height: auto;
+        width: 100%;
+    }
+    .tempoh1{
+        color: #FFF;
+        text-align: left;
+        font-family: Nunito;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 42px; /* 65.625% */
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            height: 60px;
+            width: 8px;
+            margin-top: -10px;
+            left: -20px;
+            top: 0;
+            background: #E83344;
+        }  
+    }
+    .tempoh1b{
+        color: #FFF;
+        text-align: left;
+        font-family: Nunito;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 42px; /* 65.625% */
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            height: 60px;
+            width: 8px;
+            margin-top: -10px;
+            left: -20px;
+            top: 0;
+            background: #E83344;
+        }  
+    }
+    .rowContent{
+        margin: 0;
+        padding: 0;
+    }
+    .tempop{
+        color: #FFF;
+        font-family: Nunito;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 35px;
+        padding-top: 5px;
+        text-align: left;
+    }
+    .tempopb{
+        color: #FFF;
+        font-family: Nunito;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 35px;
+        padding-top: 5px;
+        text-align: left;
+    }
+    .revContent4>div>img{
+        height: 140px;
+    }
+    .pix{
+        display: block;
+        margin: auto;
+        padding-top: 40px;
+        height: 140px;
+        width: auto;
+        margin-bottom: 80px;
+    }
+    .tigre{
+        display: block;
+        margin: auto;
+        height: 200px;
+        
+    }
+    .mailForm{
+        display: block;
+        margin: auto;
+        margin-left: 0;
+        
+    }
+    .formContainer{
+        display: block;
+        width:100%;
+        padding: 0;
+    }
+    .mailForm>h1{
+        color: #000;
+        font-family: Nunito;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 42px; /* 65.625% */
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            height: 60px;
+            width: 8px;
+            margin-top: -10px;
+            left: -10px;
+            top: 0;
+            background: #E83344;
+        }  
+    }
+    .inputContainer{
+        display: block;
+        margin: auto;
+        padding: 0;
+    }
+    .inputBox{
+        display: inline-block;
+        width: 100%;
+        height: 53.437px;
+        border-radius: 22px;
+        border: 1px solid #C6C6C6;
+        background: #FFF;
+        margin: 0;
+        
+       
+        
+    }
+    .inputMessage{
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 320.624px;
+        border-radius: 7px;
+        border: 1px solid #C6C6C6;
+        background: #FFF;
+    }
+    .submit{
+        display: block;
+        margin-top: 15px;
+        margin-left: 25px;
+        background-color: #E83344;
+        color: white;
+        border-radius: 50px;
+        min-width: 100px;
+        border: none;
+        padding: 5px 45px 5px 45px;
+        font-size: 26px;
+        font-weight: 600;
+        &:active{
+            filter: drop-shadow(0px 4px 16px rgba(90, 125, 188, 0.05)) drop-shadow(0px 0px 4px rgba(67, 71, 85, 0.27));
+            box-shadow: none;
+        }
+    }
+    footer{
+        background-color:#000;
+        padding: 15px 100px;
+    }
+    .footerP{
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .icons .icons>img{
+        display: inline-block;
+    }
+    .icons{
+        padding-left: 140px;
+    }
     
 }
+
