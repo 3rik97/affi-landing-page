@@ -8,9 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script lang="javascript" type="text" src="index.js"></script>
+    <title>Afiliados do/da Bora Jogar</title>
 </head>
-
 <body>
     <section class="mobileUI">
         <div class="col-md-auto btnBox2">
@@ -40,9 +39,9 @@
                     <ul>
                         <li class="link"><a href="#comission">Comissões</a></li>
                         <li class="link"><a href="">Gestão de resultados</a></li>
-                        <li class="link"><a href="">Perguntas frequentes</a></li>
+                        <li class="link"><a href="#faq">Perguntas frequentes</a></li>
                         <li class="link"><a href="">Sobre nós</a></li>
-                        <li class="link"><a href="">Fale conosco</a></li>
+                        <li class="link"><a href="#email">Fale conosco</a></li>
 
                     </ul>
                 </nav>
@@ -196,16 +195,78 @@
                 </div>
             </div>
         </div>
-        <div class="row revContent4">
-            <div class="col-lg">
+        <!-- FAQ -->
+        <div class="row revContent4"id="faq">
+            <div class="col-lg" >
                 <img src="img/perguntas.png" alt="">
+            </div>
+            <div class="col-lg">
+                <h1 class="FAQH1">FAQs</h1>
+                <section class="accordion">
+                    <div class="tab">
+                        <div class="tabHead">
+                            <p>Quem pode ser um afiliado?</p>
+                            <!-- <button class="toggleBtn"></button> -->
+                        </div>
+                        <div class="tabContent">
+                            <p>
+                                Qualquer pessoa pode se tornar um afiliado! Tudo o que você precisa fazer é preencher
+                                nosso formulário de registro e aguardar o e-mail de aprovação da equipe de Afiliados da
+                                Bora Jogar (isso pode levar até 24 horas). Uma vez que sua conta esteja ativada, você
+                                terá acesso completo a todas as nossas ferramentas de afiliados. Se você possui um site,
+                                inscreva-se e nos envie a URL do seu site. Uma vez aprovado, forneceremos a você um ID
+                                de afiliado e acesso a todas as nossas ferramentas de marketing para ajudá-lo a promover
+                                alguns dos produtos de jogos mais populares e de alto desempenho na internet. Em
+                                seguida, você pode colocar nossos banners e links em seu site. Quanto mais cliques em
+                                nossos links, mais jogadores e, em última análise, mais dinheiro para você.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="tabHead">
+                            <p>O programa é gratuito para participar?</p>
+                            <!-- <button class="toggleBtn"></button> -->
+                        </div>
+                        <div class="tabContent">
+                            <p>Sim! É gratuito participar do nosso programa de afiliados. Tudo o que você precisa fazer é se cadastrar. Não há taxa de inscrição.</p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="tabHead">
+                            <p>Procedimento de Saque</p>
+                            <!-- <button class="toggleBtn"></button> -->
+                        </div>
+                        <div class="tabContent">
+                            <p>Gostaríamos de informar nossos usuários sobre o processo de saque em nossa plataforma. Os saques são processados no início de cada mês e podem levar de 3 a 5 dias úteis para serem concluídos. Esse período é necessário para garantir a segurança e a verificação adequada das transações. Agradecemos a compreensão de todos os usuários durante esse processo e estamos disponíveis para esclarecer quaisquer dúvidas.</p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="tabHead">
+                            <p>Como um cliente se junta à minha conta de afiliado?</p>
+                            <!-- <button class="toggleBtn"></button> -->
+                        </div>
+                        <div class="tabContent">
+                            <p>Cada link que conecta seu site ao Bora Jogar contém um ID de rastreamento exclusivo. Isso ajuda a rastrear impressões, cliques, registros, depósitos/saques e atividades de jogo de seus clientes indicados em nosso site. Essas informações são armazenadas em nosso banco de dados e podem ser acessadas por meio do seu painel de afiliados. Impressões e cliques fazem parte do relatório em tempo real, e todas as outras atividades dos jogadores estão disponíveis para visualização no dia seguinte.</p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="tabHead">
+                            <p>O que é um programa de afiliados?</p>
+                            <!-- <button class="toggleBtn"></button> -->
+                        </div>
+                        <div class="tabContent">
+                            <p>Um programa de afiliados é um tipo de parceria entre um comerciante online e o proprietário de um site, no qual o comerciante online recompensa o proprietário do site por qualquer receita gerada por meio dos links do comerciante no site do parceiro. Como afiliado, você recebe uma comissão toda vez que um cliente é indicado por meio do seu site e gera receita para o comerciante.</p>
+                        </div>
+                    </div>
+                </section>
+
             </div>
         </div>
         <div class="row revContent5">
             <img src="img/pix.png" class="pix" alt="">
         </div>
         <div class="row revContent6">
-            <div class="col-lg mailForm">
+            <div class="col-lg mailForm" id="email">
                 <h1>Fale Conosco</h1>
                 <form action="" class="formContainer">
                     <div class="inputContainer">
@@ -226,7 +287,7 @@
 
 
         </div>
-        
+
 
     </div>
     <footer class="container-fluid">
@@ -252,5 +313,6 @@
 
 
 </body>
+<script src="index.js"></script>
 
 </html>
