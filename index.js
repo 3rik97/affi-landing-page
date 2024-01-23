@@ -34,16 +34,16 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
-const cards = document.querySelectorAll("div")
+// const cards = document.querySelectorAll("div")
 
-const observer = new IntersectionObserver (entries =>{
+// const observer = new IntersectionObserver (entries =>{
     
-    entries.forEach(entry =>{
-        entry.target.classList.toggle("show"), entry.isIntersecting
-    })
+//     entries.forEach(entry =>{
+//         entry.target.classList.toggle("show"), entry.isIntersecting
+//     })
     
-}
-)
-cards.forEach(card =>{
-    observer.observe(card)
-})
+// }
+// )
+// cards.forEach(card =>{
+//     observer.observe(card)
+// })

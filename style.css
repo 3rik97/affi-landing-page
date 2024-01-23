@@ -1,6 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Nunito:wght@400;900&display=swap');
 
   body{
     overflow-x: hidden;
@@ -113,6 +111,7 @@ nav>ul>li> a:hover::before{
     padding-right: 5px;
 }
 .btnJoin{
+
     background-color: #E83344;
     color: white;
     border-radius: 50px;
@@ -123,6 +122,7 @@ nav>ul>li> a:hover::before{
     font-weight: 600;   
     display: block;
     margin-left: 200px;
+    margin-top: 20px;
     box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.20) inset, 0px 7px 13px -3px rgba(0, 0, 0, 0.30), 0px 2px 4px 0px rgba(0, 0, 0, 0.40);
     &:active{
         filter: drop-shadow(0px 4px 16px rgba(90, 125, 188, 0.05)) drop-shadow(0px 0px 4px rgba(67, 71, 85, 0.27));
@@ -207,7 +207,7 @@ nav>ul>li> a:hover::before{
     padding-right:20px;
 }
 .img2{
-    height: 250px;
+    height: 100%;
     width: 250px;
         margin-top:-180px
 }
@@ -217,6 +217,56 @@ nav>ul>li> a:hover::before{
     width: 100%;
     background-color: #212121;
     
+}
+
+.ambassadorContainer{
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right:80px;
+   
+}
+.txtContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 100%; 
+}
+.miaImg,.miaImg2{
+    width: 100%;
+    height: auto;
+}
+.miaImg2{
+    padding-left: 300px;
+}
+.revh1black{
+    color: black;
+    text-align: left;
+    font-family: 'Nunito',sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight:500;
+    line-height: 42px; /* 65.625% */
+    letter-spacing: 0px !important;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        height: 140%;
+        width: 8px;
+        margin-top: -10px;
+        background: #E83344;
+
+    }
+}
+.revpBlack{
+    color: black;
+    font-family: Nunito;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px; /* 175% */
+    margin-top: 40px;
 }
 .affiCardsContainer{
     display: flex;
@@ -336,9 +386,9 @@ nav>ul>li> a:hover::before{
     font-family: 'Nunito',sans-serif;
     font-size: 50px;
     font-style: normal;
-    font-weight: 600;
+    font-weight:500;
     line-height: 42px; /* 65.625% */
-    letter-spacing: -3.32px;
+    letter-spacing: 0px !important;
     position: relative;
     &::before{
         content: "";
@@ -434,6 +484,7 @@ nav>ul>li> a:hover::before{
     height: auto;
     display: block;
     margin: auto;
+    border-radius: 25px;
     
 }
 .revContent3{
@@ -524,13 +575,13 @@ nav>ul>li> a:hover::before{
 .mailForm{
     display: block;
     margin: auto;
-    margin-left: 150px;
+    margin-left: 80px;
     
 }
 .formContainer{
     display: block;
-    width:750px;
-    padding: 10px;
+    width:auto;
+    
 }
 .mailForm>h1{
     color: #000;
@@ -540,6 +591,7 @@ nav>ul>li> a:hover::before{
     font-weight: 500;
     line-height: 42px; /* 65.625% */
     position: relative;
+    margin-bottom:15px;
     &::before{
         content: "";
         position: absolute;
@@ -552,44 +604,50 @@ nav>ul>li> a:hover::before{
     }  
 }
 .inputContainer{
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    padding: 20px;
+    display: flex;  
+   
 }
 .inputBox{
     display: inline-block;
-    width: 350.228px;
+    width:333px;
     height: 53.437px;
     border-radius: 22px;
     border: 1px solid #C6C6C6;
     background: #FFF;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+   
    
     
 }
 .inputMessage{
     display: block;
-    margin: auto;
     width: 675px;
-    height: 320.624px;
+    height: 336px;
     border-radius: 7px;
     border: 1px solid #C6C6C6;
     background: #FFF;
+
+    &::placeholder{
+       position: absolute;
+       top: 0;
+       padding-top: 15px;
+        
+    }
 }
 .submit{
     display: block;
     margin-top: 15px;
-    margin-left: 25px;
     background-color: #E83344;
     color: white;
     border-radius: 50px;
-    min-width: 100px;
+    min-width: 200px;
     border: none;
     padding: 5px 45px 5px 45px;
     font-size: 26px;
     font-weight: 600;
+    box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.20) inset, 0px 7px 13px -3px rgba(0, 0, 0, 0.30), 0px 2px 4px 0px rgba(0, 0, 0, 0.40);
     &:active{
         filter: drop-shadow(0px 4px 16px rgba(90, 125, 188, 0.05)) drop-shadow(0px 0px 4px rgba(67, 71, 85, 0.27));
         box-shadow: none;
@@ -694,7 +752,12 @@ footer{
     line-height: 80px; /* 135.593% */
     letter-spacing: -3.32px;
 }
-
+.collabimg{
+    left: 0 !important;
+    margin-top:200px;
+    margin-left: 80px ;
+    position: absolute;
+}
 
 
 @media screen and (max-width: 1063px){
@@ -780,6 +843,8 @@ footer{
         font-weight: 600;
         display: block;
         margin: auto;
+        margin-top: 30px;
+       
 
        
         
@@ -794,27 +859,27 @@ footer{
         padding-top: 80px;
         padding-left:10px;
         padding-bottom: 0;
+        flex-direction: column-reverse;
     }
     .bannerImgContainer{
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
         width: fit-content;
-        padding-bottom: 50px;
 
     }
     .img1{
         height: 200px !important;
         width: 200px !important;
         margin: auto;
-        margin-left: -70px;
-        padding: 0;
+        padding: 2px;
     }
     .img2{
-        height: 120px;
+        height: 100%;
         width: 120px;
         margin: auto;
-        margin-top: 10px;
+        margin-top: -80px;
+
+       
     }
     .contentContainer>div>h1{
         display: block;
@@ -829,8 +894,8 @@ footer{
         align-items: center;
         align-content: center;
         padding-bottom: 0 !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        padding-left: 20px !important;
+        padding-right: 020px !important;
     }
     .card1,.card2{
         display: block;
@@ -861,7 +926,7 @@ footer{
     .card1>img,.card2>img{
         height: 80px;
         position: absolute;
-        right: 50%;
+        right: 20px;
         transform: translateX(50%);
         top: -30px;
     }
@@ -870,35 +935,37 @@ footer{
         margin-bottom: 60px;
     }
     .h1Afiliates{
-        padding-top: 80px;
+        padding-top: 20px;
         padding-left: 35px;
         font-family: 'nunito',sans-serif;
         font-weight:600;
         position: relative;
         width: fit-content;
+        font-size: 30px !important; 
     
         &::before{
             content: "";
             position: absolute;
-            height: 41%;
-            width: 8px;
-            margin-top: -4px;
-            margin-left: -15px;
+            height: 30px;
+            width: 4px;
+            margin-top: -7px;
+            margin-left: -10px;
             background: #E83344;
+            bottom: 0;
     
         }
     }
     .cardp{
         color: #363636;
         font-family: 'poppins',sans-serif;
-        font-size: 20px;
+        font-size:18px;
         font-style: normal;
         font-weight: 400;
-        line-height: 34.5px;
+        line-height: 20px;
         width: auto !important;
         padding-top: 20px;
-        padding-left:5px;
-        padding-right: 5px;
+        padding-left:20px;
+        padding-right: 10px;
         
     }
     .cardLink{
@@ -1121,9 +1188,7 @@ footer{
         }  
     }
     .inputContainer{
-        display: block;
-        margin: 0;
-        padding: 0;
+        display: block;      
         
     }
     .inputBox{
@@ -1189,5 +1254,85 @@ footer{
         padding-right: 5px;
         padding-bottom: 40px;
     }
+
+    .bannertext{
+        margin-bottom:50px;
+
+    }
+    .bannertext>h1{
+        text-align: center;
+        font-size:40px !important;
+       
+    }
+    .bannertext>p{
+        text-align: center; 
+        font-size:16px !important;
+        font-family: montserrat;
+        font-weight:500;
+        margin: auto;
+       
+    }
+    .ambassadorContainer{
+        padding: 0;
+        position: relative;
+    }
+    .miaImg{
+        padding-left:40px ;
+        padding-right: 40px ;
+    }
+    .miaImg2{
+        padding-left: 200px;
+    }
+    .contentContainer>div>h1{
+        font-size:20px;
+        text-align: center;
+        padding: 0;
+    }
+    .contentContainer>div{
+        padding: 0;
+    }
+    .contentP{
+        padding: 0;
+        padding-left: 10px;
+        padding-right: 10px;       
+        font-size:16px;
+        text-align: center;
+        line-height: 18px;
+    }
+    .revh1black{
+        font-size: 30px !important;
+        padding-left:10px;
+        padding-top: 15px;
+        font-weight: 600;
+        &::before{
+            height: 40px;
+            width: 5px ;
+            bottom: 0;
+            left: 0;
+            margin-bottom:3px;
+            margin-left: 5px;
+        }
+    }
+    .revpBlack{
+        font-size: 16px;
+        font-family: nunito;
+        line-height: 15px;
+        padding-left: 10px;
+        padding-right: 15px;
+        margin-top: 0;
+    }
+    .collabimg{
+        width: 200px;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-top: 0;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
 }
+    
+
 
