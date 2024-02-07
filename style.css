@@ -85,7 +85,9 @@ nav>ul>li> a:hover::before{
 .logo{
     display: block;
     height: 30px;
+    width: auto;
     margin: auto;
+   
     
 }
 .btnBox2,.navMobile,.burgerMenu{
@@ -179,7 +181,7 @@ nav>ul>li> a:hover::before{
     padding: 10px 20px 20px 10px;
     
 }
-.contentContainer>div>h1{
+.contentContainer>div>h2{
     color: white;
     font-family: 'nunito','sans-serif';
     width: 750px;
@@ -583,7 +585,7 @@ nav>ul>li> a:hover::before{
     width:auto;
     
 }
-.mailForm>h1{
+.mailForm>h2{
     color: #000;
     font-family: Nunito;
     font-size: 64px;
@@ -1287,6 +1289,7 @@ footer{
         font-size:20px;
         text-align: center;
         padding: 0;
+        margin: ;
     }
     .contentContainer>div{
         padding: 0;
